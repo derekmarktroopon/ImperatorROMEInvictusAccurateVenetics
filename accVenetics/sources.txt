@@ -1,0 +1,24 @@
+﻿
+#Venetic Names:
+#https://www.academia.edu/36361463/Lexicon_of_Venetic
+#https://www.academia.edu/36361467/Venetic_inscriptions
+#https://www.academia.edu/40719160/Celtic_and_Venetic_in_contact_The_Dialectal_Attribution_of_the_Personal_Names_in_the_Venetic_record
+#https://www.academia.edu/35169209/The_Venetic_Agent_Nouns_in_tor_Revisited
+
+#Venetic language:
+#https://www.academia.edu/36361463/Lexicon_of_Venetic
+#https://www.academia.edu/36396773/Grammar_of_Venetic
+#https://www.academia.edu/36361467/Venetic_inscriptions
+#https://www.academia.edu/16363078/Due_nuovi_cippi_con_iscrizione_venetica_da_Padova
+#https://ifc.dpz.es/recursos/publicaciones/38/77/12marinetti.pdf
+
+#Venetic Religion:
+#https://www.academia.edu/221296/Between_Religion_and_Consumption_Culinary_and_Drinking_Equipment_in_Venetic_Ritual_Practice
+#https://www.academia.edu/36361463/Lexicon_of_Venetic
+#https://arca.unive.it/retrieve/handle/10278/3680031/83947/Poster%20Lagole%20di%20Calalzo.pdf
+#https://www.academia.edu/35853116/The_Venetic_Inscription_from_Monte_Manicola_and_Three_termini_publici_from_Padua_A_Reappraisal
+#https://www.researchgate.net/publication/276192697_Landscapes_of_the_Prehistoric_Veneto_Italy_A_Plurality_of_Local_Identities_Reflected_in_Cult_and_Landscape_Perception
+
+#Other
+
+# https://it.wikipedia.org/wiki/Vicenza#Origini_del_nome

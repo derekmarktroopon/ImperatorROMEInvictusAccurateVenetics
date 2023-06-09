@@ -1,0 +1,37 @@
+﻿l_english:
+
+ deity_reitia:0 "$omen_reitia$"
+ omen_reitia:1 "Reitia"
+ omen_reitia_desc:3 "Reitia, goddess of writing and of women, the Healer and the Good. Temples in Este are filled with inscriptions towards her, and priests, generally women, help pilgrims from all around the Po Vally, regardless of ethnicity, pay their respects to this goddess through writing."
+
+deity_trumusiates:0 "$omen_trumusiates$"
+ omen_trumusiates:1 "Trumusiates"
+ omen_trumusiates_desc:3 "The god Trumusiates (or Tumusiates) was invoked in various inscriptions around Cadore, in Northeastern Veneto. Identified with the Roman God Apollo, the Veneti prayed to Trumusiates for safe travel and for protection of the merchants passing through to travel to central Europe."
+
+deity_fladukia:0 "$omen_fladukia$"
+ omen_fladukia:1 "Fladukia"
+ omen_fladukia_desc:3 "Known from an inscription from Monte Manicola, Fladukia (possibly Sefladukia) seems to have been a goddess of war, to whom the Veneti would invoke to bless their weapons before battle in her sacred groves."
+
+deity_alkomno:0 "$omen_alkomno$"
+ omen_alkomno:1 "Alkomno"
+ omen_alkomno_desc:3 "Various inscriptions to the god Alkomno could be found at the site of Morlungo. Alkomno, a god associated with the Dioscuri by the later Romans, apears to have been a God of fertility and human health, suggested by the finding of phalic shaped offerings linked to his worship."
+ 
+deity_bouleno:0 "$omen_bouleno$" #placeholder description - very little evidence
+ omen_bouleno:1 "Boulenos"
+ omen_bouleno_desc:3 "Boulenos was a god of fighting. Although not as grand as the goddess of war Fladukia, Boulenos was still prayed to by many individuals, through the offering of bronze warriors, in hopes of him giving greater prowess."
+ 
+deity_einaios:0 "$omen_einaios$" #placeholder description - very little evidence
+ omen_einaios:1 "Einaios"
+ omen_einaios_desc:3 "Einaios was a god, worshiped by the adriatic Veneti, whose name is only know from a single occurance from a suburban shrine. It can be inferred, however, that Einaios may have been a god of the household, simply because of the location of the shrine and because of lack of evidence suggesting otherwise."
+ 
+deity_altino:0 "$omen_altino$"
+ omen_altino:1 "Altino"
+ omen_altino_desc:3 "Equated with Jupiter, king of the gods, by the Romans, Altino was primerally worshiped in his patron city of Altinon (Altinum in Latin). Built around a grove dedicated to his worship Altinum became the political centre of the Veneti, after their integration by the Romans, and pilgrims came from as far as Rome itself to worship him."
+
+deity_vetusa:0 "$omen_vetusa$"
+ omen_vetusa:1 "Vetusa"
+ omen_vetusa_desc:3 "Known only from a few inscriptions, it is thought that Vetusa was a Venetic goddess of nature, possibly associated with rivers and water, whose name was inscribed on objects relating to water (including a situla handle), possibly suggesting her protection over these objects."
+ 
+ deity_reithus:0 "$omen_reithus$"
+ omen_reithus:1 "Reithus"
+ omen_reithus_desc:3 "Reithus, goddess of writing and kindness. Perhaps the Rhaetic name for a deitiy equal to the Venetic Reitia, Reithus may be a goddess associated with inscription."

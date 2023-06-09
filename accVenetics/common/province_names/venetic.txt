@@ -1,0 +1,23 @@
+﻿venetic =	{
+	1887 = PROV1887_venetic # Pompeiopedos #my guess - pedos -> town (cognate with polis?)
+	3571 = PROV3571_venetic # Mediiolanos #my guess - Mediios -> Medio
+	3581 = PROV3581_venetic # Briksia #my guess 
+	3584 = PROV3584_venetic # Verona 
+	3589 = PROV3589_venetic # Hostilia #my guess
+	3593 = PROV3593_venetic # Atria #my guess
+	3594 = PROV3594_venetic # Patavnos #attested
+	3595 = PROV3595_venetic # Atestes #my guess
+	3596 = PROV3596_venetic # Veicetinos  #attested
+	3597 = PROV3597_venetic # Anneianon #my guess 
+	3598 = PROV3598_venetic # Altinos #somewhat attested, city named after the venetic god Altino
+	3599 = PROV3599_venetic # Tarvosios #my guess 
+	3600 = PROV3600_venetic # Akelon #my guess 
+	3601 = PROV3601_venetic # Portos Likventia #my guess - qu -> kv, latin 'equus' -> venetic 'ekvos'
+	3603 = PROV3603_venetic # Opitergios #my guess
+	3604 = PROV3604_venetic # Belodunon #my guess, venetic version of Belo-dunun
+	3605 = PROV3605_venetic # Fuoron Rakios #my guess
+	3606 = PROV3606_venetic # Akuilia #Aquillia was a roman colony, this is a venetic spelling
+    3590 = PROV3590_venetic # Montebelenos #Monte Bellum may come from the venetic for Monte Bellanus, which would be Monts Belenos -> Montebelenos
+	4018 = PROV4018_venetic # Tergests 
+	3602 = PROV3602_venetic # Konkordia - the latin root for Concordia comes from proto-italic con and Kord (which became the latin cor), so for a venetic translation I just changed he spelling.
+}

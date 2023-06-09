@@ -1,0 +1,195 @@
+﻿amber_road_mission_vnt = {
+    header = "missiongerman2"
+    icon = cde_celts_battle_romans_celts
+
+    repeatable = no
+
+    chance = { factor = 5 }
+
+    potential = {
+        NOT = { has_variable = amber_vnt_mission }
+        has_civil_war = no
+        OR = {
+		    primary_culture = venetic
+		    tag = VNT
+		}
+    }
+
+    abort = {
+        ai_mission_back_out_trigger = yes
+    }
+
+    on_potential = { }
+
+    on_start = {
+        start_mission_ai_effect = yes
+    }
+
+    on_abort = {
+        custom_tooltip = general_mission_cooldown_tt
+        set_variable = {
+            name = amber_vnt_mission
+            days = 7300
+        }
+    }
+
+    on_completion = {
+        complete_mission_effect = yes
+    }
+
+    amber_vnt_mission_task_1 = { # A Carnian Outpoast
+        icon = task_political
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_2 = { # Expand the Amber Trade Route
+        icon = task_political
+		requires = { amber_vnt_mission_task_1 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_3 = { # Venetian Horses
+        icon = task_political
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_4 = { # Expand the Copper Mines
+        icon = task_political
+		requires = { amber_vnt_mission_task_3 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_5 = { # Elevate Patavnos
+        icon = task_political
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_6 = { # Develop Padovian pottery
+        icon = task_political
+		requires = { amber_vnt_mission_task_5 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_7 = { # Colony at Aquilia
+        icon = task_political
+		requires = { amber_vnt_mission_task_6 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }	
+
+	amber_vnt_mission_task_8 = { # Venetic Export Infraestructure
+        icon = task_political
+		requires = { amber_vnt_mission_task_2 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_9 = { # Investments into Adria
+        icon = task_political
+		requires = { amber_vnt_mission_task_4 amber_vnt_mission_task_8 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_10 = { # Citizen Representation
+        icon = task_political
+		requires = { amber_vnt_mission_task_7 amber_vnt_mission_task_9 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_11 = { # Temples to Altino
+        icon = task_political
+		requires = { amber_vnt_mission_task_9 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+    }
+
+	amber_vnt_mission_task_12 = { # Centre of The Amber Road
+        icon = task_political
+		requires = { amber_vnt_mission_task_11 amber_vnt_mission_task_10 }
+
+		potential = { }
+
+		allow = { }
+		
+		highlight = { }
+
+        on_completion = {  }
+
+        final = yes
+    }
+
+}

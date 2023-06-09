@@ -1,0 +1,10 @@
+﻿
+venetic_pantheon = {
+	color = hsv { 0.69 0.98 0.87 } 
+	modifier = { 
+		global_commerce_modifier = 0.05
+		global_defensive = 0.05
+	}
+	religion_category = pantheon
+}
+

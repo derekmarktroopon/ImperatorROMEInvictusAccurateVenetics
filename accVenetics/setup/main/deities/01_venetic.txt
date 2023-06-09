@@ -1,0 +1,37 @@
+deity_manager = {
+	deities_database = { 
+		### KEYS 24001-24009 ###
+		24001 = {
+			key = omen_reitia
+			deity = deity_reitia
+		}
+		24002 = {
+			key = omen_trumusiates
+			deity = deity_trumusiates
+		}
+		24003 = {
+			key = omen_fladukia
+			deity = deity_fladukia
+		}
+		24004 = {
+			key = omen_alkomno
+			deity = deity_alkomno
+		}
+		24005 = {
+			key = omen_bouleno
+			deity = deity_bouleno
+		}
+		24006 = {
+			key = omen_einaios
+			deity = deity_einaios
+		}
+		24007 = {
+			key = omen_altino
+			deity = deity_altino
+		}
+		24008 = {
+			key = omen_vetusa
+			deity = deity_vetusa
+		}
+	}
+}

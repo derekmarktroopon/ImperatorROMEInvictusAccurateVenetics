@@ -1,0 +1,24 @@
+﻿color = rgb { 20 20 203 }
+color2 = rgb { 255 223 0 }
+
+ship_names = {
+	Patavnos Reitia Altinon Aklomnos "Rakos Ommnos" Manos Boulenos Fladukia 
+	Vetusa Este Einaios "Miles Pores" "Sainitae" 
+	"Acqui Terme" Aemilia Albintimilium Alsium "Ante Amnem" Apollo Ardelica Arilica Ariolica Asti
+	"Aquae Labrodes" "Augusta Bagiennorum"
+	Bovillae Bruttion
+	Capitium "Carreum Potentia" Catina Cephaloedium Ceres Clavenna Corfinium Cremona
+	Daedalium Derthona Diana
+	Ebovium Entella Eporedia Eryx Etruria
+	"Falerii Novi" Fortuna "Foron Novon"
+    Veronos Veicetinos 
+	Heloros Himerenses Hispellos "Hybla Gereatis" "Hybla Heraea"
+	Imachara "Ioros Concordos"
+	Lorium Luna "Lucus Feroniae"
+    Netum "Novo Teuter"
+	Placentia Pluto Pollentia
+	Quirinus
+	Saepinum Selinuntiae Sentinum Sol 
+	Thermae 
+	"Vado Sabatia" Vardacate Vercelum Vesta Vulcan
+}

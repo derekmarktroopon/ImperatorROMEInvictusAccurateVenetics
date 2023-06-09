@@ -1,0 +1,217 @@
+﻿
+
+deity_reitia = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_love
+	passive_modifier = { global_citizen_output = deity_global_citizen_output_svalue }
+	omen = { research_points_modifier = deity_research_points_modifier_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = culture #This Deity uses a culture slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_civic_tech_effect = yes
+	}
+}
+
+deity_trumusiates = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_wealth
+	passive_modifier = { global_commerce_modifier = deity_global_commerce_modifier_svalue }
+	omen = { global_defensive = omen_global_defensive_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = economy #This Deity uses an Economy Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_income_effect = yes
+	}
+}
+
+deity_fladukia = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_eloquence
+	passive_modifier = { land_morale_modifier = omen_land_morale_modifier_svalue }
+	omen = { global_pop_conversion_speed_modifier = omen_global_pop_conversion_speed_modifier_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = war #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		military_apotheosis_capital_freemen_effect = yes
+	}
+}
+
+deity_alkomno = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_love
+	passive_modifier = { global_population_growth = deity_global_population_growth_svalue }
+	omen = { manpower_recovery_speed = omen_manpower_recovery_speed } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_capital_effect = yes
+	}
+}
+
+deity_bouleno = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_war
+	passive_modifier = { army_maintenance_cost = deity_army_maintenance_cost_svalue }
+	omen = { military_tech_investment = deity_military_tech_investment_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = war #This Deity uses a War slot.
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		naval_apotheosis_effect = yes
+	}
+}
+
+deity_einaios = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_eloquence
+	passive_modifier = { discipline = omen_discipline_svalue }
+	omen = { global_monthly_civilization = omen_global_monthly_civilization_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = culture #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		culture_apotheosis_oratory_tech_effect = yes
+	}
+}
+
+deity_altino = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_eloquence
+	passive_modifier = { global_monthly_civilization = deity_global_monthly_civilization_svalue }
+	omen = { ruler_popularity_gain = omen_ruler_popularity_gain_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = economy #This Deity uses a Culture Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		economy_apotheosis_capital_citizens_effect = yes
+	}
+}
+
+deity_vetusa = {
+	trigger = {
+		polytheistic_check_religion_trigger = yes
+		primary_culture = venetic
+		OR = {
+			common_deity_trigger = {
+				RELIGION = roman_pantheon
+			}
+			deity:omen_laran = {
+				holy_site_deity_check_trigger = yes
+			}
+		}
+	}
+	icon = deity_tribal_love
+	passive_modifier = { global_population_capacity_modifier = deity_global_population_capacity_modifier_svalue }
+	omen = { global_tribesmen_happyness = omen_global_tribesmen_happiness_svalue } #Bonus from Omen
+	religion = roman_pantheon
+	deity_category = fertility #This Deity uses a Fertility Slot
+	deification_trigger = {
+		can_deify_trigger = yes
+	}
+	
+	on_activate = {
+		fertility_apotheosis_food_effect = yes
+	}
+}
