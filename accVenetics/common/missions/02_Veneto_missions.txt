@@ -278,10 +278,10 @@
 	allow = { OR = {alliance_with = c:CNM  } }
 	
 	highlight = { 
-	    scope:country = c:CNM 
+	    scope:country = { tag = CNM }
 	}
 
-	on_completion = {	}
+	on_completion = {	}# plus opinion with Cenomania, if cenomania is allied with the ligoni, sends event to the Cenomani asking them to break their alliance with the Ligoni.
 
     bypass = { 
         NOT = { exists = c:CNM }
@@ -297,7 +297,7 @@
         
 		duration = 180
 
-		allow = { 
+		allow = { # > 170 opinion with Cenomania
             treasury >= 150
 		}
 		
@@ -366,14 +366,14 @@
 
 	potential = { }
 
-	allow = { 
-		has_military_Tradition = celtic_traditions
+	allow = { #Integrate lepontic culture  
+		
 	}
 	
 	highlight = {  }
 
 	on_completion = { 
-	add_country_modifier = {
+	add_country_modifier = { #and add celtic military traditions
         name = veneto_gallic_warfare
         effect = {
             light_infantry_plains_combat_bonus = 0.1
@@ -429,7 +429,7 @@
     
     ai_chance = { 8 }
 
-	on_completion = { }
+	on_completion = { } #Triggers event to send an offer of tributary status to rome, then sends event to rome on wether or not to accept Venetos offer of vassalization.
     }
 
 	secure_venetia_mission_task_11 = { # Ally the Etruscans
@@ -489,7 +489,7 @@
 		}
 	}
 
-	on_completion = { }
+	on_completion = { } # Casus belli cost reduction, -100 opinion with Rome and Etruria
 
     }
 
@@ -529,7 +529,7 @@
 	
 	highlight = {  }
 
-	on_completion = { }
+	on_completion = { } # + Diplomatic reputation, + stability
 
     }
 
@@ -540,7 +540,6 @@
 	potential = { }
 
 	allow = { 
-	    num_of_provinces >= 26
 	    num_of_cities >= 3
 	    owns = {
 	        AND = {
@@ -553,11 +552,9 @@
 	
 	highlight = {  }
 
-	on_completion = { }
+	on_completion = { } # Global Fort Defense
 
 	final = yes
     }
-
-}
 
 }
