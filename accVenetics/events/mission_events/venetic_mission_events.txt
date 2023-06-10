@@ -327,3 +327,24 @@ secure_venetia_mission_event.15 = { #Venetian Security effect
 	    }
 	}
 }
+
+secure_venetia_mission_event.16 = { #Cenomania is compelled to abandon the Ligoni
+    type = country_event
+    theme =
+    
+}
+
+secure_venetia_mission_event.17 = { #send an offer of vassalisation to Rome
+    type = country_event
+    theme =
+    
+}
+
+secure_venetia_mission_event.18 = { #Rome receives the offer
+}
+
+secure_venetia_mission_event.19 = { #send a request of assistance from Etruria
+}
+
+secure_venetia_mission_event.20 = { #Etrurias response
+}
