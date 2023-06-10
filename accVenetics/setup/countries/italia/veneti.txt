@@ -10,7 +10,7 @@ ship_names = {
 	Capitium "Carreum Potentia" Catina Cephaloedium Ceres Clavenna Corfinium Cremona
 	Daedalium Derthona Diana
 	Ebovium Entella Eporedia Eryx Etruria
-	"Falerii Novi" Fortuna "Foron Novon"
+	"Falerii Novi" Fortuna "Foron Novos"
     Veronos Veicetinos 
 	Heloros Himerenses Hispellos "Hybla Gereatis" "Hybla Heraea"
 	Imachara "Ioros Concordos"
