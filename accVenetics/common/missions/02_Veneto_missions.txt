@@ -45,103 +45,31 @@
         icon = task_political
 
 		allow = { 
-			owns_or_subject_owns = p:3589
-			owns_or_subject_owns = p:3597
-			owns_or_subject_owns = p:3593
-			owns_or_subject_owns = p:143
-			owns_or_subject_owns = p:145
-			#owns province of ferraria_area / olena
+		    scope:area = {
+		        ferraria_area = {
+		            every_province = {
+	                    owned_or_subject_owned = root
+		            }
+		        }
+		    }
 		}
 		
         custom_tooltip = {
-			owns_or_subject_owns = { scope:area = ferraria_area }
+			owns_or_subject_owns = area.ferraria_area
 		}
 
 		highlight = { 
-			scope:province = {
-				province_id = 3589
-				province_id = 3597
-				province_id = 3593
-				province_id = 143
-				province_id = 145
+			scope:area = {
+				ferraria_area = {
+				    every_province = { yes } 
+				}
 		    } 
 		}
 		bypass = {
 	    }
         on_completion = {  
-			p:4018 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4019 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4020 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4022 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4024 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4025 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			p:4026 = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
-			any_province = { 
-				if = {
-					limit = { 
-						has_owner = yes
-						owner = c:HIS
-						NOT = { owner = root } 
-					}
-					add_claim = root 
-				}
-			}
+            custom_tooltip = secure_venetia_take_adria_tooltip
+            trigger_event = { id = secure_venetia_mission_event.1 }
 		}
 	}
 	secure_venetia_mission_task_2 = { # Take the Mountain Pass
@@ -163,8 +91,10 @@
 	    }
 
         on_completion = { 
-            p:4015 = {
-                set_city_status { city_rank }
+            custom_tooltip = secure_venetia_take_the_mountain_pass_tooltip
+            #Carnia becomes a city
+            trigger_event = {
+                id = secure_venetia_mission_event.2
             }
         }
     }
@@ -195,14 +125,11 @@
 		highlight = {  }
 
         on_completion = { 
-            p:3595 = {
-                add_permanent_province_modifier = { 
-					name = este_fortifications
-				    local_defensive = 0.1 
-			    }
-			    local_building_slot = 1
-            }
-         }
+            custom_tooltip = secure_venetia_fortify_este_tooltip
+            trigger_event = {
+                id = secure_venetia_mission_event.3
+            } 
+        }
     }
 	
 	secure_venetia_mission_task_4 = { # Fortify Carnia
@@ -231,14 +158,10 @@
 		highlight = { }
 
         on_completion = { 
-			p:4025 = {
-                add_permanent_province_modifier = { 
-					name = carnian_fortifications
-				    local_defensive = 0.1 
-			    }
-			    local_building_slot = 1
-			   local_building_slot = 1
-           }
+            custom_tooltip = secure_venetia_fortify_carnia_tooltip
+            trigger_event = {
+                id = secure_venetia_mission_event.4
+            } 
 		}
     }	
 
@@ -267,7 +190,12 @@
 		    } 
 	    }
 
-        on_completion = {	}
+        on_completion = {	
+            custom_tooltip = secure_venetia_bring_in_the_histrians_tooltip
+            trigger_event = {
+                id = secure_venetia_mission_event.5
+            } 
+        }
     }	
 
 	secure_venetia_mission_task_6 = { # Ally the Cenomani
@@ -278,10 +206,16 @@
 	allow = { OR = {alliance_with = c:CNM  } }
 	
 	highlight = { 
-	    scope:country = { tag = CNM }
+	    scope:country = { c:CNM }
 	}
 
-	on_completion = {	}# plus opinion with Cenomania, if cenomania is allied with the ligoni, sends event to the Cenomani asking them to break their alliance with the Ligoni.
+	on_completion = {
+        custom_tooltip = secure_venetia_ally_the_cenomani_tooltip
+        trigger_event = {
+            
+            id = secure_venetia_mission_event.6
+        } 
+	}# plus opinion with Cenomania, if cenomania is allied with the ligoni, sends event to the Cenomani asking them to break their alliance with the Ligoni.
 
     bypass = { 
         NOT = { exists = c:CNM }
@@ -304,55 +238,9 @@
 		highlight = {  }
 
         on_completion = { 
-            add_treasury = -150
-            p:3595 = {
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = tribesman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = freeman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = freeman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-                create_pop = {
-                    set_pop_type = freeman
-                    set_pop_culture = lepontic
-                    set_pop_religion = druidism
-                }
-
-            }
+            custom_tooltip = secure_venetia_gallic_colonies_tooltip
+            add_treasury = -150									
+            trigger_event = { id = secure_venetia_mission_event.7 }
         }
 
 		bypass = { 
@@ -373,21 +261,15 @@
 	highlight = {  }
 
 	on_completion = { 
-	add_country_modifier = { #and add celtic military traditions
-        name = veneto_gallic_warfare
-        effect = {
-            light_infantry_plains_combat_bonus = 0.1
-            light_infantry_offensive = 0.1
-            land_unit_attrition = -0.05
-        } 
-	}
+	    custom_tooltip = secure_venetia_adopt_gallic_warfare_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.8 }
 	}
 
 	bypass = { 
 		NOT = { exists = c:CNM }
 	}
-
-    }
+  
+    } 
 
 	secure_venetia_mission_task_9 = { # Ally the Romans
 	icon = task_expansion
@@ -406,7 +288,11 @@
 
     ai_chance = { 8 }
 
-	on_completion = { }
+	on_completion = { 
+	    custom_tooltip = secure_venetia_ally_the_romans_tooltip	
+	    add_stability = 15			
+        trigger_event = { id = secure_venetia_mission_event.9 }
+	}
     }
 
 	secure_venetia_mission_task_10 = { # Swear Fealty to Rome
@@ -429,7 +315,10 @@
     
     ai_chance = { 8 }
 
-	on_completion = { } #Triggers event to send an offer of tributary status to rome, then sends event to rome on wether or not to accept Venetos offer of vassalization.
+	on_completion = { 
+	    custom_tooltip = secure_venetia_swear_fealty_to_rome_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.10 }
+	} #Triggers event to send an offer of tributary status to rome, then sends event to rome on wether or not to accept Venetos offer of vassalization.
     }
 
 	secure_venetia_mission_task_11 = { # Ally the Etruscans
@@ -449,10 +338,14 @@
 
     ai_chance = { 2 }
 
-	on_completion = { }
+	on_completion = { 
+	    custom_tooltip = secure_venetia_ally_the_etruscans_tooltip	
+	    add_stability = 20			
+        trigger_event = { id = secure_venetia_mission_event.11 }
+	}
     }
 
-	secure_venetia_mission_task_12 = { # Swear Fealty to Etruria
+	secure_venetia_mission_task_12 = { # Etruscan Protection
 	icon = task_expansion
 	requires = { secure_venetia_mission_task_11 }
 	prevented_by = { secure_venetia_mission_task_10 secure_venetia_mission_task_13 }
@@ -468,7 +361,10 @@
 		}
 	}
 
-	on_completion = { }
+	on_completion = { 
+	    custom_tooltip = secure_venetia_etruscan_protection_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.12 }
+	}
     }
 
 	secure_venetia_mission_task_13 = { # Sovereign Supremacy 
@@ -489,7 +385,10 @@
 		}
 	}
 
-	on_completion = { } # Casus belli cost reduction, -100 opinion with Rome and Etruria
+	on_completion = { 
+    	custom_tooltip = secure_venetia_sovereign_supremacy_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.13 }      
+	} # Casus belli cost reduction, -50 opinion with Rome and Etruria
 
     }
 
@@ -529,7 +428,10 @@
 	
 	highlight = {  }
 
-	on_completion = { } # + Diplomatic reputation, + stability
+	on_completion = { 
+    	custom_tooltip = secure_venetia_favorable_diplomacy_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.14 } 
+	} # + Diplomatic reputation, + stability
 
     }
 
@@ -552,7 +454,10 @@
 	
 	highlight = {  }
 
-	on_completion = { } # Global Fort Defense
+	on_completion = { 
+    	custom_tooltip = secure_venetia_venetian_security_tooltip				
+        trigger_event = { id = secure_venetia_mission_event.15 } 
+	} # Global Fort Defense
 
 	final = yes
     }
